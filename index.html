@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Basics & Box Model Demo</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header Section -->
+    <header class="main-header">
+        <h1>CSS Basics & Box Model</h1>
+        <p>Understanding how CSS styles and the box model work together</p>
+    </header>
+
+    <!-- Navigation Section -->
+    <nav class="navigation">
+        <ul>
+            <li><a href="#introduction">Introduction</a></li>
+            <li><a href="#box-model">Box Model</a></li>
+            <li><a href="#examples">Examples</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- Main Content -->
+    <main class="container">
+        <!-- Introduction Section -->
+        <section id="introduction" class="content-section">
+            <h2>Introduction to CSS Styling</h2>
+            <p class="intro-text">
+                CSS (Cascading Style Sheets) is used to style and layout web pages. 
+                It controls colors, fonts, spacing, and positioning of HTML elements.
+            </p>
+            <div class="highlight-box">
+                <h3>Key Properties</h3>
+                <ul>
+                    <li>Color and background-color</li>
+                    <li>Font-size and font-family</li>
+                    <li>Margin and padding</li>
+                    <li>Border and border-radius</li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Box Model Section -->
+        <section id="box-model" class="content-section">
+            <h2>The CSS Box Model</h2>
+            <p>Every HTML element is a box with four areas:</p>
+            
+            <div class="box-model-demo">
+                <div class="box-content">
+                    <strong>Content</strong>
+                    <p>The actual content (text, images, etc.)</p>
+                </div>
+                <div class="box-padding">
+                    <strong>Padding</strong>
+                    <p>Space between content and border</p>
+                </div>
+                <div class="box-border">
+                    <strong>Border</strong>
+                    <p>The edge of the box</p>
+                </div>
+                <div class="box-margin">
+                    <strong>Margin</strong>
+                    <p>Space outside the border</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Examples Section -->
+        <section id="examples" class="content-section">
+            <h2>Box Model Examples</h2>
+            
+            <div class="example-cards">
+                <div class="card card-1">
+                    <h3>Card 1</h3>
+                    <p>This card has small padding and margin</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                
+                <div class="card card-2">
+                    <h3>Card 2</h3>
+                    <p>This card has larger padding and margin</p>
+                    <button class="btn">Learn More</button>
+                </div>
+                
+                <div class="card card-3">
+                    <h3>Card 3</h3>
+                    <p>This card has different border styles</p>
+                    <button class="btn">Learn More</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="content-section">
+            <h2>Contact Information</h2>
+            <div class="contact-form">
+                <form>
+                    <div class="form-group">
+                        <label for="name">Name:</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message:</label>
+                        <textarea id="message" name="message" rows="4" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <p>&copy; 2025 Peter Kamau Mwaura. All rights reserved.</p>
+    </footer>
+</body>
+</html>
